@@ -68,9 +68,10 @@
       const audio = document.querySelector(`audio[data-key="${pressedKey}"]`);
       
       key.classList.add('playing');
+      audio.currentTime = 0;
       audio.play();
 
-      setTimeout(()=>{key.classList.remove('playing');}, 250);
+      setTimeout(()=>{key.classList.remove('playing');}, 70);
     }    
   })
 
